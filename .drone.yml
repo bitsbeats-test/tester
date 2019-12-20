@@ -4,8 +4,11 @@ name: linux
 steps:
   - name: hi
     image: busybox
+    environment:
+      TEST:
+        from_secret: test
     commands:
+      - env
       - echo hello world
-      - sleep 60
 
 # hi
