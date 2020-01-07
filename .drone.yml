@@ -8,7 +8,7 @@ steps:
       TEST:
         from_secret: test
     commands:
-      - env
+      - env | grep -v ^DRONE
       - echo hello world
 
 # hi
