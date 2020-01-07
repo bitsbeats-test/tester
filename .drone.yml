@@ -7,6 +7,8 @@ steps:
     environment:
       TEST:
         from_secret: test
+      FROM_RONE:
+        from_secret: FROM_DRONE
     commands:
       - env | grep -v ^DRONE
       - echo hello world
