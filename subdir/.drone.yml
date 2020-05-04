@@ -1,0 +1,8 @@
+kind: pipeline
+name: linux-subdir
+
+steps:
+  - name: subdir
+    image: busybox
+    commands:
+      - echo hello from subdir
