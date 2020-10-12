@@ -12,5 +12,3 @@ steps:
     commands:
       - env | grep -v ^DRONE
       - echo hello world
-
-# hi
