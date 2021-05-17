@@ -11,4 +11,4 @@ steps:
         from_secret: FROM_DRONE
     commands:
       - env | grep -v ^DRONE
-      - echo hello world
+      - echo hello worlds
